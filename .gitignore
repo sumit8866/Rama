@@ -1,0 +1,12 @@
+# secrets
+.elevenlabs-key
+# installed tools and libraries (reinstall with npm install / pip)
+node_modules/
+.venv/
+models/
+tools/
+__pycache__/
+# rendered videos, covers and music (too big for GitHub; music license forbids sharing the raw files)
+output/
+music/
+**/.hyperframes/

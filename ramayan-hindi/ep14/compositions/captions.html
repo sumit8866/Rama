@@ -1,0 +1,53 @@
+<template>
+  <style>
+  @font-face { font-family: "Mukta"; font-weight: 800; src: url("assets/fonts/Mukta-ExtraBold.ttf"); }
+  @font-face { font-family: "Mukta"; font-weight: 700; src: url("assets/fonts/Mukta-Bold.ttf"); }
+  @font-face { font-family: "Tiro Devanagari Hindi"; font-weight: 400; src: url("assets/fonts/TiroDevanagariHindi-Regular.ttf"); }
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .cw { position: absolute; left: 70px; width: 820px; top: 1352px; height: 190px; display: flex; align-items: center; justify-content: center; }
+    .cap { font-family: "Mukta", sans-serif; font-weight: 800; font-size: 54px; line-height: 1.3; color: #ffffff; text-align: center;
+      background: rgba(12, 6, 20, 0.66); border-radius: 26px; padding: 14px 28px 6px; max-width: 820px; text-wrap: balance;
+      text-shadow: 0 3px 0 #000, 0 0 12px rgba(0,0,0,0.6); }
+    .hl { color: #ffd23a; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cw-s01_1" class="cw clip" data-start="0.65" data-duration="3.654"><div id="cap-s01_1" class="cap">एक सोने का हिरण... जो असल में, एक <span class="hl">राक्षस</span> था!</div></div>
+    <div id="cw-s01_2" class="cw clip" data-start="4.304" data-duration="3.592"><div id="cap-s01_2" class="cap">इसी छल से... शुरू हुआ <span class="hl">सीता हरण</span>!</div></div>
+    <div id="cw-s02_1" class="cw clip" data-start="8.546" data-duration="3.98"><div id="cap-s02_1" class="cap">शूर्पणखा की बात सुनकर... रावण, <span class="hl">मारीच</span> के पास गया।</div></div>
+    <div id="cw-s02_2" class="cw clip" data-start="12.526" data-duration="4.56"><div id="cap-s02_2" class="cap">मारीच <span class="hl">डर</span> गया... पर रावण ने उसे, मौत की धमकी दी!</div></div>
+    <div id="cw-s03_1" class="cw clip" data-start="17.736" data-duration="3.42"><div id="cap-s03_1" class="cap">मारीच ने... चमकते <span class="hl">सोने के हिरण</span> का रूप धर लिया।</div></div>
+    <div id="cw-s03_2" class="cw clip" data-start="21.156" data-duration="4.527"><div id="cap-s03_2" class="cap">उसे देखकर सीता बोलीं... प्रभु, मुझे यह <span class="hl">हिरण</span> चाहिए!</div></div>
+    <div id="cw-s04_1" class="cw clip" data-start="26.333" data-duration="3.26"><div id="cap-s04_1" class="cap">लक्ष्मण को... <span class="hl">सीता</span> की रक्षा का काम देकर,</div></div>
+    <div id="cw-s04_2" class="cw clip" data-start="29.593" data-duration="2.368"><div id="cap-s04_2" class="cap">राम... हिरण के <span class="hl">पीछे</span> दौड़ पड़े।</div></div>
+    <div id="cw-s04_3" class="cw clip" data-start="31.961" data-duration="3.552"><div id="cap-s04_3" class="cap">हिरण उन्हें... बहुत <span class="hl">दूर</span> जंगल में ले गया।</div></div>
+    <div id="cw-s05_1" class="cw clip" data-start="36.163" data-duration="4.62"><div id="cap-s05_1" class="cap">राम ने <span class="hl">बाण</span> चलाया... और मारीच, असली रूप में आ गया!</div></div>
+    <div id="cw-s05_2" class="cw clip" data-start="40.783" data-duration="5.52"><div id="cap-s05_2" class="cap">मरते-मरते... वह राम की आवाज़ में चिल्लाया, <span class="hl">हा लक्ष्मण!</span></div></div>
+    <div id="cw-s06_1" class="cw clip" data-start="46.953" data-duration="3.66"><div id="cap-s06_1" class="cap">आवाज़ सुनकर सीता <span class="hl">घबरा</span> गईं... और लक्ष्मण को भेजा।</div></div>
+    <div id="cw-s06_2" class="cw clip" data-start="50.613" data-duration="5.48"><div id="cap-s06_2" class="cap">जाते-जाते लक्ष्मण ने... कुटिया के चारों ओर, एक <span class="hl">रेखा</span> खींच दी!</div></div>
+    <div id="cw-s07_1" class="cw clip" data-start="56.743" data-duration="3.66"><div id="cap-s07_1" class="cap">और तभी... एक <span class="hl">साधु</span>, कुटिया के द्वार पर आया।</div></div>
+    <div id="cw-s07_2" class="cw clip" data-start="60.403" data-duration="2.54"><div id="cap-s07_2" class="cap">अगले भाग में देखिए... <span class="hl">सीता हरण</span>!</div></div>
+    <div id="cw-s07_3" class="cw clip" data-start="62.943" data-duration="3.094"><div id="cap-s07_3" class="cap"><span class="hl">जय श्री राम</span>!</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cap-s01_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 0.65);
+      tl.fromTo("#cap-s01_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 4.304);
+      tl.fromTo("#cap-s02_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 8.546);
+      tl.fromTo("#cap-s02_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 12.526);
+      tl.fromTo("#cap-s03_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 17.736);
+      tl.fromTo("#cap-s03_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 21.156);
+      tl.fromTo("#cap-s04_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 26.333);
+      tl.fromTo("#cap-s04_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 29.593);
+      tl.fromTo("#cap-s04_3", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 31.961);
+      tl.fromTo("#cap-s05_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 36.163);
+      tl.fromTo("#cap-s05_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 40.783);
+      tl.fromTo("#cap-s06_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 46.953);
+      tl.fromTo("#cap-s06_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 50.613);
+      tl.fromTo("#cap-s07_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 56.743);
+      tl.fromTo("#cap-s07_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 60.403);
+      tl.fromTo("#cap-s07_3", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 62.943);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>
