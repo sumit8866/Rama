@@ -14,6 +14,17 @@ It installs HyperFrames (npm), the Python voice tools (.venv), ffmpeg, and downl
 - Node.js or Python not installed: tell them the link the script prints.
 - `.elevenlabs-key` missing: ask the user to create it themselves (`Set-Content .elevenlabs-key "KEY"`). Never print, log or commit the key. Without a key, use the free Microsoft voice (`"engine": "edge", "voice": "hi-IN-MadhurNeural", "rate": "+10%", "pitch": "+24Hz"` in `narration.json`).
 
+## When the user asks for a new part: deliver the finished reel
+
+Do the whole pipeline in one go, without stopping to ask questions, and end by giving the final files:
+1. Write `narration.json` and `scenes.mjs` (continue the story from the last episode).
+2. Voice: use ElevenLabs if `eleven.py usage` shows enough characters left for the script; otherwise switch that episode to the free Microsoft voice automatically and say so.
+3. Build, `hf check`, look at snapshots and fix layout problems, then render.
+4. Add music (`add_music.py`, set its `MOOD`).
+5. Make the cover (`output\covers\cover-epNN.png`).
+6. Write the post text to `output\captions-epNN.txt`: Instagram caption (Hindi hook line, Roman-Hindi keywords line, "रामायण भाग N | Ramayan Part N", an episode-specific question, "📲 परिवार के साथ शेयर करें, ताकि बच्चे भी रामायण जानें 🙏", "💾 Save करें | अगला भाग: …", "Voice: ElevenLabs" if that voice was used, 8 hashtags), plus a YouTube title ending in `#shorts` and a 2-line description.
+7. Send the user the finished video (`output\with-music\…mp4`), the cover and the caption file, with one short line each. Don't explain the build steps.
+
 ## Episodes
 
 Done: Ep 14 सोने का हिरण, Ep 15 सीता हरण, Ep 16 जटायु का बलिदान (Ep 1-13 were deleted). Next: Ep 17 शबरी के बेर, then सुग्रीव मित्रता, बाली वध, हनुमान लंका, ...
