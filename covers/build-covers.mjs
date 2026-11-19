@@ -1,9 +1,9 @@
-// Builds the episode thumbnails (covers/) and the profile picture (profile/) as HyperFrames
-// projects: one 1-second still per image. Then grab them with `hf snapshot` (see README).
+// Builds the episode thumbnails (covers/) as a HyperFrames project: one 1-second still per
+// cover. The profile picture has its own builder, profile/build-profile.mjs. Then grab them with `hf snapshot` (see README).
 // Usage, from the studio root:  node covers/build-covers.mjs
 import fs from "node:fs";
 import path from "node:path";
-import { C, T, lotus, rays } from "../ramayan/build/lib.mjs";
+import { C, T } from "../ramayan/build/lib.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, "$1")), "..");
 const BRAND = "Devlok Toons";
@@ -71,29 +71,4 @@ const covers = EPISODES.map(([ep, n, title], i) => `      <div id="cv-${ep}" cla
       </div>`).join("\n");
 fs.writeFileSync(path.join(ROOT, "covers", "index.html"), page(1080, 1920, EPISODES.length, COVER_CSS, covers));
 
-// ---------- profile picture: 1080x1080, everything inside the centre circle ----------
-const PROFILE_CSS = `
-  .pf { position: absolute; inset: 0; }
-  .pf svg { position: absolute; inset: 0; }
-  .name { position: absolute; left: 0; right: 0; top: 600px; text-align: center; font-family: "Mukta", sans-serif; font-weight: 800; font-size: 170px; line-height: 1.1;
-    color: #ffd23a; -webkit-text-stroke: 10px #3a1408; paint-order: stroke fill; text-shadow: 0 7px 0 #3a1408, 0 0 30px rgba(0,0,0,0.5); }
-  .sub { position: absolute; left: 0; right: 0; top: 818px; text-align: center; font-family: "Mukta", sans-serif; font-weight: 800; font-size: 66px;
-    letter-spacing: 14px; color: #fff3cf; text-shadow: 0 4px 0 #3a1408; }`;
-const profileSvg = `<svg viewBox="0 0 1080 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#ffb347"/><stop offset="0.45" stop-color="#c2361f"/><stop offset="1" stop-color="#2a0a3a"/></radialGradient>
-    <radialGradient id="gl"><stop offset="0" stop-color="#fff4c8" stop-opacity="0.95"/><stop offset="0.5" stop-color="#f7d77a" stop-opacity="0.45"/><stop offset="1" stop-color="#f7d77a" stop-opacity="0"/></radialGradient>
-  </defs>
-  <rect width="1080" height="1080" fill="url(#bg)"/>
-  ${rays("pr", 540, 430, 900, 24, "#ffe08a", 0.22)}
-  <circle cx="540" cy="430" r="330" fill="url(#gl)"/>
-  <circle cx="540" cy="540" r="520" fill="none" stroke="#ffd23a" stroke-width="14" opacity="0.9"/>
-  <g transform="translate(540,505) scale(2.05)">${lotus(0, 0, 1)}</g>
-</svg>`;
-const profile = `      <div id="pf" class="pf clip" data-start="0" data-duration="1" data-track-index="0">
-        ${profileSvg}
-        <div class="name">देवलोक</div>
-        <div class="sub">TOONS</div>
-      </div>`;
-fs.writeFileSync(path.join(ROOT, "profile", "index.html"), page(1080, 1080, 1, PROFILE_CSS, profile));
-console.log("covers:", EPISODES.length, "| profile: 1");
+console.log("covers:", EPISODES.length, "(profile picture: node profile/build-profile.mjs)");
