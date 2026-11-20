@@ -97,6 +97,8 @@ Episode 15 (0:56) is "सीता हरण": the sadhu asking for alms, the La
 
 Episode 16 (0:54) is "जटायु का बलिदान": Jatayu attacking Ravana in the sky, Ravana's sword, Ram returning to the empty hut, the dying Jatayu pointing south, Jatayu dying in Ram's lap, and Ram's last rites for him. Run the same commands from inside `ramayan-hindi\ep16\`; the output is `output/ramayan-hindi-ep16-jatayu.mp4`.
 
+Episode 17 (1:04) is "शबरी के बेर": a flashback to young Shabari serving Matang Rishi and his promise that Ram would come, years of sweeping the path and laying flowers until her hair turns white, Ram's arrival and her tears, the berries she tastes before giving only the sweet ones to Ram (from the popular tradition), Ram's "bond of devotion", the way to Sugriva, and a Hanuman teaser. Run the same commands from inside `ramayan-hindi\ep17\`; the output is `output/ramayan-hindi-ep17-shabari.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)

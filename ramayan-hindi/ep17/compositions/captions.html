@@ -1,0 +1,47 @@
+<template>
+  <style>
+  @font-face { font-family: "Mukta"; font-weight: 800; src: url("assets/fonts/Mukta-ExtraBold.ttf"); }
+  @font-face { font-family: "Mukta"; font-weight: 700; src: url("assets/fonts/Mukta-Bold.ttf"); }
+  @font-face { font-family: "Tiro Devanagari Hindi"; font-weight: 400; src: url("assets/fonts/TiroDevanagariHindi-Regular.ttf"); }
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .cw { position: absolute; left: 70px; width: 820px; top: 1352px; height: 190px; display: flex; align-items: center; justify-content: center; }
+    .cap { font-family: "Mukta", sans-serif; font-weight: 800; font-size: 54px; line-height: 1.3; color: #ffffff; text-align: center;
+      background: rgba(12, 6, 20, 0.66); border-radius: 26px; padding: 14px 28px 6px; max-width: 820px; text-wrap: balance;
+      text-shadow: 0 3px 0 #000, 0 0 12px rgba(0,0,0,0.6); }
+    .hl { color: #ffd23a; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cw-s01_1" class="cw clip" data-start="0.55" data-duration="6.36"><div id="cap-s01_1" class="cap">एक बूढ़ी भीलनी ने... भगवान राम को <span class="hl">जूठे बेर</span> खिलाए!</div></div>
+    <div id="cw-s02_1" class="cw clip" data-start="7.56" data-duration="3.66"><div id="cap-s02_1" class="cap">बचपन में शबरी, <span class="hl">मतंग ऋषि</span> के आश्रम में सेवा करती थी।</div></div>
+    <div id="cw-s02_2" class="cw clip" data-start="11.22" data-duration="5.582"><div id="cap-s02_2" class="cap">गुरु ने कहा... एक दिन <span class="hl">राम</span> स्वयं तुम्हारे पास आएँगे!</div></div>
+    <div id="cw-s03_1" class="cw clip" data-start="17.452" data-duration="3.66"><div id="cap-s03_1" class="cap">शबरी रोज़ रास्ता साफ़ करती... और <span class="hl">फूल</span> बिछाती।</div></div>
+    <div id="cw-s03_2" class="cw clip" data-start="21.112" data-duration="6.48"><div id="cap-s03_2" class="cap">बरसों बीत गए... बाल <span class="hl">सफ़ेद</span> हो गए, पर भरोसा नहीं टूटा।</div></div>
+    <div id="cw-s04_1" class="cw clip" data-start="28.242" data-duration="3.1"><div id="cap-s04_1" class="cap">और एक दिन... सच में <span class="hl">राम</span> उसकी कुटिया पर आ गए!</div></div>
+    <div id="cw-s04_2" class="cw clip" data-start="31.342" data-duration="4.39"><div id="cap-s04_2" class="cap">शबरी की आँखों से <span class="hl">आँसू</span> बह निकले।</div></div>
+    <div id="cw-s05_1" class="cw clip" data-start="36.382" data-duration="4.102"><div id="cap-s05_1" class="cap">वो हर बेर <span class="hl">चखती</span>... और सिर्फ़ मीठे बेर राम को देती।</div></div>
+    <div id="cw-s05_2" class="cw clip" data-start="40.484" data-duration="5.76"><div id="cap-s05_2" class="cap">लक्ष्मण चौंके... पर राम ने <span class="hl">प्रेम</span> से सारे बेर खा लिए!</div></div>
+    <div id="cw-s06_1" class="cw clip" data-start="46.894" data-duration="3.319"><div id="cap-s06_1" class="cap">राम बोले... मैं सिर्फ़ <span class="hl">भक्ति का नाता</span> मानता हूँ।</div></div>
+    <div id="cw-s06_2" class="cw clip" data-start="50.213" data-duration="5.72"><div id="cap-s06_2" class="cap">फिर शबरी ने उन्हें... <span class="hl">सुग्रीव</span> के पास जाने का रास्ता बताया।</div></div>
+    <div id="cw-s07_1" class="cw clip" data-start="56.583" data-duration="2.926"><div id="cap-s07_1" class="cap">अगले भाग में देखिए... <span class="hl">हनुमान से भेंट</span>!</div></div>
+    <div id="cw-s07_2" class="cw clip" data-start="59.509" data-duration="3.88"><div id="cap-s07_2" class="cap"><span class="hl">जय श्री राम</span>!</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cap-s01_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 0.55);
+      tl.fromTo("#cap-s02_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 7.56);
+      tl.fromTo("#cap-s02_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 11.22);
+      tl.fromTo("#cap-s03_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 17.452);
+      tl.fromTo("#cap-s03_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 21.112);
+      tl.fromTo("#cap-s04_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 28.242);
+      tl.fromTo("#cap-s04_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 31.342);
+      tl.fromTo("#cap-s05_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 36.382);
+      tl.fromTo("#cap-s05_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 40.484);
+      tl.fromTo("#cap-s06_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 46.894);
+      tl.fromTo("#cap-s06_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 50.213);
+      tl.fromTo("#cap-s07_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 56.583);
+      tl.fromTo("#cap-s07_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 59.509);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>
