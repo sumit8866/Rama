@@ -131,6 +131,8 @@ Episode 32 (1:12) is "लक्ष्मण का क्रोध" (Valmiki, Ki
 
 Episode 33 (1:04) is "तारा ने लक्ष्मण को शांत किया" (Valmiki, Kishkindha Kanda sarga 33-36, checked against the Shastri translation on wisdomlib): Lakshman entering the music-filled palace and twanging his bowstring so that Sugriva trembles on his throne, Tara sent to calm him (forgive him; the vanaras have already gathered), Lakshman bowing his head before her, Tara's example of Vishwamitra losing ten years to the apsara Ghritachi, Sugriva saying Ram alone can slay Ravana, and Lakshman apologising for his harsh words. Output: `output/ramayan-hindi-ep33-tara-lakshman.mp4`.
 
+Episode 34 (0:58) is "वानर सेना" (Valmiki, Kishkindha Kanda sarga 37-39, checked against the Shastri translation on wisdomlib): the dust-darkened sky as crores of vanaras arrive, Sugriva sending Hanuman to summon them from Himalaya, Vindhya, Kailash and every mountain (black as collyrium, golden, lion-maned), Sugriva and Lakshman reaching Ram in a golden litter and Ram's embrace (the time has come to act), the commanders Jambavan, Nila, Mainda, Dvivida and Hanuman's father Kesari, and Sugriva's pledge that they will fight Ravana and bring Sita back. Output: `output/ramayan-hindi-ep34-vanar-sena.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
