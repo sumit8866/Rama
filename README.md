@@ -103,6 +103,8 @@ Episode 18 (0:59) is "हनुमान से भेंट": the brahmin who i
 
 Episode 19 (0:56) is "राम-सुग्रीव मित्रता" (Valmiki, Kishkindha Kanda sarga 5): Hanuman brings Ram and Lakshman to Sugriva, the flowering sala branch laid as Ram's seat, Hanuman kindling fire by rubbing two sticks, Ram and Sugriva walking around the fire as friends, Sugriva's sorrow over Vali, and Ram's promise. From this episode on every event follows `ramayan-hindi/EPISODE-PLAN.md`. Output: `output/ramayan-hindi-ep19-ram-sugriva-mitrata.mp4`.
 
+Episode 20 (0:57) is "सीता जी के गहने" (Valmiki, Kishkindha Kanda sarga 6-7): the hook question about the anklets, a flashback of Sita dropping her ornaments tied in her yellow upper cloth to the vanaras on the mountain, Ram pressing them to his chest and weeping, Lakshman knowing only the anklets because he bowed at her feet daily, Sugriva's promise to find Sita, and Ram embracing him. Output: `output/ramayan-hindi-ep20-sita-ke-gahne.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)

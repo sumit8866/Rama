@@ -1,0 +1,41 @@
+<template>
+  <style>
+  @font-face { font-family: "Mukta"; font-weight: 800; src: url("assets/fonts/Mukta-ExtraBold.ttf"); }
+  @font-face { font-family: "Mukta"; font-weight: 700; src: url("assets/fonts/Mukta-Bold.ttf"); }
+  @font-face { font-family: "Tiro Devanagari Hindi"; font-weight: 400; src: url("assets/fonts/TiroDevanagariHindi-Regular.ttf"); }
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .cw { position: absolute; left: 70px; width: 820px; top: 1352px; height: 190px; display: flex; align-items: center; justify-content: center; }
+    .cap { font-family: "Mukta", sans-serif; font-weight: 800; font-size: 54px; line-height: 1.3; color: #ffffff; text-align: center;
+      background: rgba(12, 6, 20, 0.66); border-radius: 26px; padding: 14px 28px 6px; max-width: 820px; text-wrap: balance;
+      text-shadow: 0 3px 0 #000, 0 0 12px rgba(0,0,0,0.6); }
+    .hl { color: #ffd23a; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cw-s01_1" class="cw clip" data-start="0.55" data-duration="7.375"><div id="cap-s01_1" class="cap">लक्ष्मण ने सीता जी के कुंडल नहीं पहचाने... सिर्फ़ <span class="hl">पायल</span> पहचानी! पर क्यों?</div></div>
+    <div id="cw-s02_1" class="cw clip" data-start="8.575" data-duration="5.82"><div id="cap-s02_1" class="cap">सुग्रीव बोले... रावण के रथ में एक स्त्री <span class="hl">राम, लक्ष्मण</span> पुकार रही थी।</div></div>
+    <div id="cw-s02_2" class="cw clip" data-start="14.395" data-duration="6"><div id="cap-s02_2" class="cap">हमें देखकर उसने... अपने <span class="hl">गहने</span> कपड़े में बाँधकर नीचे गिरा दिए।</div></div>
+    <div id="cw-s03_1" class="cw clip" data-start="22.245" data-duration="5.68"><div id="cap-s03_1" class="cap">गहने देखते ही... राम उन्हें <span class="hl">सीने</span> से लगाकर रो पड़े।</div></div>
+    <div id="cw-s04_1" class="cw clip" data-start="28.575" data-duration="3.74"><div id="cap-s04_1" class="cap">लक्ष्मण बोले... मैं <span class="hl">कुंडल</span> और बाजूबंद नहीं पहचानता,</div></div>
+    <div id="cw-s04_2" class="cw clip" data-start="32.315" data-duration="6.423"><div id="cap-s04_2" class="cap">पर ये <span class="hl">पायल</span> पहचानता हूँ... क्योंकि मैं रोज़ उनके <span class="hl">चरण</span> छूता था!</div></div>
+    <div id="cw-s05_1" class="cw clip" data-start="39.388" data-duration="3.9"><div id="cap-s05_1" class="cap">सुग्रीव ने वचन दिया... मैं <span class="hl">सीता</span> जी को ज़रूर ढूँढ लाऊँगा!</div></div>
+    <div id="cw-s05_2" class="cw clip" data-start="43.288" data-duration="6.032"><div id="cap-s05_2" class="cap">राम ने आँसू पोंछे... और सुग्रीव को <span class="hl">गले</span> लगा लिया।</div></div>
+    <div id="cw-s06_1" class="cw clip" data-start="49.97" data-duration="3.18"><div id="cap-s06_1" class="cap">अगले भाग में देखिए... <span class="hl">बाली और मायावी</span>!</div></div>
+    <div id="cw-s06_2" class="cw clip" data-start="53.15" data-duration="3.671"><div id="cap-s06_2" class="cap"><span class="hl">जय श्री राम</span>!</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cap-s01_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 0.55);
+      tl.fromTo("#cap-s02_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 8.575);
+      tl.fromTo("#cap-s02_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 14.395);
+      tl.fromTo("#cap-s03_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 22.245);
+      tl.fromTo("#cap-s04_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 28.575);
+      tl.fromTo("#cap-s04_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 32.315);
+      tl.fromTo("#cap-s05_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 39.388);
+      tl.fromTo("#cap-s05_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 43.288);
+      tl.fromTo("#cap-s06_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 49.97);
+      tl.fromTo("#cap-s06_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 53.15);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>
