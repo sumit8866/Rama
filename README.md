@@ -105,6 +105,8 @@ Episode 19 (0:56) is "राम-सुग्रीव मित्रता" (Va
 
 Episode 20 (0:57) is "सीता जी के गहने" (Valmiki, Kishkindha Kanda sarga 6-7): the hook question about the anklets, a flashback of Sita dropping her ornaments tied in her yellow upper cloth to the vanaras on the mountain, Ram pressing them to his chest and weeping, Lakshman knowing only the anklets because he bowed at her feet daily, Sugriva's promise to find Sita, and Ram embracing him. Output: `output/ramayan-hindi-ep20-sita-ke-gahne.mp4`.
 
+Episode 21 (1:11) is "बाली और मायावी" (Valmiki, Kishkindha Kanda sarga 9-10): the sealed cave as a hook, Vali and Sugriva as loving brothers with Vali king of Kishkindha, the demon Mayavi's challenge at night, the chase into the cave, Sugriva guarding the mouth for a whole year, blood flowing out, the cave sealed with a rock, the ministers crowning Sugriva, Vali's return and rage, Sugriva thrown out and Ruma taken. Output: `output/ramayan-hindi-ep21-bali-mayavi.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
