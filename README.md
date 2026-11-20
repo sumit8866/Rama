@@ -127,6 +127,8 @@ Episode 30 (1:05) is "सुग्रीव का राज्याभिष�
 
 Episode 31 (1:03) is "वर्षा ऋतु" (Valmiki, Kishkindha Kanda sarga 27-28, checked against the Shastri translation on wisdomlib): lightning that looks to Ram like Sita struggling in Ravana's grip, the cave on Prasravana with its lotus pool, river and music from Kishkindha, Ram sleepless at moonrise and Lakshman's counsel (one who grieves never succeeds; wait for autumn), the rains (hill-like clouds, dancing peacocks, croaking frogs, rivers racing to the sea), and Ram trusting Sugriva to remember his promise. Output: `output/ramayan-hindi-ep31-varsha-ritu.mp4`.
 
+Episode 32 (1:12) is "लक्ष्मण का क्रोध" (Valmiki, Kishkindha Kanda sarga 29-32, checked against the Shastri translation on wisdomlib): Ram's message that the gate of death Vali passed through is not closed, autumn arriving while Sugriva lives in pleasure, Hanuman reminding him, Sugriva ordering Nila to gather the army within fifteen days on pain of death, Ram grieving under the clear autumn sky and sending Lakshman, the vanaras fleeing the angry Lakshman at Kishkindha, Sugriva asleep and intoxicated, and the ministers and Hanuman advising him to beg Lakshman's pardon. Output: `output/ramayan-hindi-ep32-lakshman-ka-krodh.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
