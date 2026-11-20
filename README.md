@@ -109,6 +109,8 @@ Episode 21 (1:11) is "बाली और मायावी" (Valmiki, Kishkind
 
 Episode 22 (1:14) is "दुंदुभि और मतंग का श्राप" (Valmiki, Kishkindha Kanda sarga 11): the toe-flick hook, the buffalo demon Dundubhi with the strength of a thousand elephants, the ocean and the Himalaya each sending him on to Vali, Vali seizing his horns, slamming him down and hurling the body a yojana, the blood falling on Matanga's ashram and the curse that keeps Vali off Rishyamuka, Sugriva safe there, the giant skeleton, Ram flicking it ten yojanas with his big toe, and Sugriva's doubt that dry bones prove little. Output: `output/ramayan-hindi-ep22-dundubhi-matang.mp4`.
 
+Episode 23 (1:02) is "सात साल के पेड़" (Valmiki, Kishkindha Kanda sarga 11-12): the one-arrow hook, Sugriva showing the seven sal trees, Vali able to pierce only one, Lakshman asking what would convince him, Ram's single arrow piercing all seven trees, the hill and the earth, the arrow returning to his quiver, and Sugriva bowing at Ram's feet. Output: `output/ramayan-hindi-ep23-saat-saal-vriksh.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
