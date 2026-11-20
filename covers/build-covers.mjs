@@ -9,7 +9,7 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace
 const BRAND = "Devlok Toons";
 const SERIES = "रामायण";
 export const EPISODES = [
-  ["ep14", 14, "सोने का हिरण"], ["ep15", 15, "सीता हरण"], ["ep16", 16, "जटायु का बलिदान"], ["ep17", 17, "शबरी के बेर"], ["ep18", 18, "हनुमान से भेंट"],
+  ["ep14", 14, "सोने का हिरण"], ["ep15", 15, "सीता हरण"], ["ep16", 16, "जटायु का बलिदान"], ["ep17", 17, "शबरी के बेर"], ["ep18", 18, "हनुमान से भेंट"], ["ep19", 19, "राम-सुग्रीव मित्रता"],
 ];
 
 const FONTS = `

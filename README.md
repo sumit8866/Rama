@@ -101,6 +101,8 @@ Episode 17 (1:04) is "शबरी के बेर": a flashback to young Shaba
 
 Episode 18 (0:59) is "हनुमान से भेंट": the brahmin who is really Hanuman, Sugriva hiding on Rishyamuk and fearing the two archers, Hanuman sent in disguise (his tail peeks out), "I am Ram", the true form and Hanuman at Ram's feet, the embrace, Hanuman carrying Ram and Lakshman on his shoulders up to Sugriva, and a Ram-Sugriva friendship teaser. Hanuman, Sugriva and other vanaras come from `CAST.hanuman`, `CAST.sugriva` and `CAST.vanara` in `lib.mjs`. Output: `output/ramayan-hindi-ep18-hanuman-milan.mp4`.
 
+Episode 19 (0:56) is "राम-सुग्रीव मित्रता" (Valmiki, Kishkindha Kanda sarga 5): Hanuman brings Ram and Lakshman to Sugriva, the flowering sala branch laid as Ram's seat, Hanuman kindling fire by rubbing two sticks, Ram and Sugriva walking around the fire as friends, Sugriva's sorrow over Vali, and Ram's promise. From this episode on every event follows `ramayan-hindi/EPISODE-PLAN.md`. Output: `output/ramayan-hindi-ep19-ram-sugriva-mitrata.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
