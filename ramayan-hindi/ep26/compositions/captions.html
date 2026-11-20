@@ -1,0 +1,47 @@
+<template>
+  <style>
+  @font-face { font-family: "Mukta"; font-weight: 800; src: url("assets/fonts/Mukta-ExtraBold.ttf"); }
+  @font-face { font-family: "Mukta"; font-weight: 700; src: url("assets/fonts/Mukta-Bold.ttf"); }
+  @font-face { font-family: "Tiro Devanagari Hindi"; font-weight: 400; src: url("assets/fonts/TiroDevanagariHindi-Regular.ttf"); }
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .cw { position: absolute; left: 70px; width: 820px; top: 1352px; height: 190px; display: flex; align-items: center; justify-content: center; }
+    .cap { font-family: "Mukta", sans-serif; font-weight: 800; font-size: 54px; line-height: 1.3; color: #ffffff; text-align: center;
+      background: rgba(12, 6, 20, 0.66); border-radius: 26px; padding: 14px 28px 6px; max-width: 820px; text-wrap: balance;
+      text-shadow: 0 3px 0 #000, 0 0 12px rgba(0,0,0,0.6); }
+    .hl { color: #ffd23a; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cw-s01_1" class="cw clip" data-start="0.55" data-duration="6.155"><div id="cap-s01_1" class="cap">एक पत्नी ने अपने पति को... मौत से बचाने की पूरी <span class="hl">कोशिश</span> की!</div></div>
+    <div id="cw-s02_1" class="cw clip" data-start="7.355" data-duration="5.68"><div id="cap-s02_1" class="cap">सुग्रीव की दूसरी गर्जना सुनकर... बाली <span class="hl">क्रोध</span> से उठ खड़ा हुआ!</div></div>
+    <div id="cw-s03_1" class="cw clip" data-start="13.685" data-duration="2.22"><div id="cap-s03_1" class="cap">तब बाली की पत्नी <span class="hl">तारा</span> ने उसे रोका...</div></div>
+    <div id="cw-s03_2" class="cw clip" data-start="15.905" data-duration="7.52"><div id="cap-s03_2" class="cap">बोली, अभी हारकर गया सुग्रीव, इतनी जल्दी लौटा है... ज़रूर उसके साथ कोई <span class="hl">बड़ी ताकत</span> है!</div></div>
+    <div id="cw-s04_1" class="cw clip" data-start="24.075" data-duration="5.57"><div id="cap-s04_1" class="cap">बेटे <span class="hl">अंगद</span> ने सुना है... अयोध्या के राम-लक्ष्मण, सुग्रीव के मित्र बन गए हैं!</div></div>
+    <div id="cw-s04_2" class="cw clip" data-start="29.645" data-duration="6.72"><div id="cap-s04_2" class="cap">राम से बैर मत करो... सुग्रीव को <span class="hl">युवराज</span> बनाकर, भाई से मेल कर लो!</div></div>
+    <div id="cw-s05_1" class="cw clip" data-start="37.015" data-duration="4.94"><div id="cap-s05_1" class="cap">पर बाली नहीं माना... बोला, ललकार सुनकर कोई वीर <span class="hl">चुप</span> नहीं बैठता!</div></div>
+    <div id="cw-s05_2" class="cw clip" data-start="41.955" data-duration="3.1"><div id="cap-s05_2" class="cap">राम तो धर्मात्मा हैं... वो कोई <span class="hl">पाप</span> नहीं करेंगे।</div></div>
+    <div id="cw-s05_3" class="cw clip" data-start="45.055" data-duration="5.066"><div id="cap-s05_3" class="cap">और सुग्रीव को मारूँगा नहीं... बस उसका <span class="hl">घमंड</span> तोड़ूँगा!</div></div>
+    <div id="cw-s06_1" class="cw clip" data-start="50.771" data-duration="4.667"><div id="cap-s06_1" class="cap">तारा ने आँसू रोककर... बाली की <span class="hl">परिक्रमा</span> की, और विजय की प्रार्थना की।</div></div>
+    <div id="cw-s06_2" class="cw clip" data-start="55.438" data-duration="4.16"><div id="cap-s06_2" class="cap">और बाली... युद्ध के लिए <span class="hl">निकल</span> पड़ा।</div></div>
+    <div id="cw-s07_1" class="cw clip" data-start="60.248" data-duration="2.602"><div id="cap-s07_1" class="cap">अगले भाग में देखिए... <span class="hl">बाली वध</span>!</div></div>
+    <div id="cw-s07_2" class="cw clip" data-start="62.85" data-duration="3.418"><div id="cap-s07_2" class="cap"><span class="hl">जय श्री राम</span>!</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cap-s01_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 0.55);
+      tl.fromTo("#cap-s02_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 7.355);
+      tl.fromTo("#cap-s03_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 13.685);
+      tl.fromTo("#cap-s03_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 15.905);
+      tl.fromTo("#cap-s04_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 24.075);
+      tl.fromTo("#cap-s04_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 29.645);
+      tl.fromTo("#cap-s05_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 37.015);
+      tl.fromTo("#cap-s05_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 41.955);
+      tl.fromTo("#cap-s05_3", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 45.055);
+      tl.fromTo("#cap-s06_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 50.771);
+      tl.fromTo("#cap-s06_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 55.438);
+      tl.fromTo("#cap-s07_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 60.248);
+      tl.fromTo("#cap-s07_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 62.85);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

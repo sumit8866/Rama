@@ -115,6 +115,8 @@ Episode 24 (1:00) is "बाली-सुग्रीव का पहला य
 
 Episode 25 (1:01) is "फूलों की माला" (Valmiki, Kishkindha Kanda sarga 12-14): Ram explaining that the brothers matched in ornaments, size, gait and voice, Lakshman putting the flowering gajapushpi creeper on Sugriva's neck (he shines like an evening cloud with a row of cranes), the Saptajana ashram of seven sages on the way, and Sugriva's second roaring challenge with Ram ready. Output: `output/ramayan-hindi-ep25-phoolon-ki-mala.mp4`.
 
+Episode 26 (1:07) is "तारा की चेतावनी" (Valmiki, Kishkindha Kanda sarga 15-16): Vali rising in rage at Sugriva's second roar, Tara stopping him (a beaten Sugriva back so soon must have strong help), Angada's spies' news that Ram and Lakshman are Sugriva's friends, her plea to make Sugriva crown prince, Vali's refusal (a hero cannot ignore a challenge, Ram knows dharma, he will only break Sugriva's pride), Tara's blessing walk around him, and Vali going out to fight. Output: `output/ramayan-hindi-ep26-tara-ki-chetavani.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
