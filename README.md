@@ -129,6 +129,8 @@ Episode 31 (1:03) is "वर्षा ऋतु" (Valmiki, Kishkindha Kanda sarg
 
 Episode 32 (1:12) is "लक्ष्मण का क्रोध" (Valmiki, Kishkindha Kanda sarga 29-32, checked against the Shastri translation on wisdomlib): Ram's message that the gate of death Vali passed through is not closed, autumn arriving while Sugriva lives in pleasure, Hanuman reminding him, Sugriva ordering Nila to gather the army within fifteen days on pain of death, Ram grieving under the clear autumn sky and sending Lakshman, the vanaras fleeing the angry Lakshman at Kishkindha, Sugriva asleep and intoxicated, and the ministers and Hanuman advising him to beg Lakshman's pardon. Output: `output/ramayan-hindi-ep32-lakshman-ka-krodh.mp4`.
 
+Episode 33 (1:04) is "तारा ने लक्ष्मण को शांत किया" (Valmiki, Kishkindha Kanda sarga 33-36, checked against the Shastri translation on wisdomlib): Lakshman entering the music-filled palace and twanging his bowstring so that Sugriva trembles on his throne, Tara sent to calm him (forgive him; the vanaras have already gathered), Lakshman bowing his head before her, Tara's example of Vishwamitra losing ten years to the apsara Ghritachi, Sugriva saying Ram alone can slay Ravana, and Lakshman apologising for his harsh words. Output: `output/ramayan-hindi-ep33-tara-lakshman.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
