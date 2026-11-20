@@ -99,6 +99,8 @@ Episode 16 (0:54) is "जटायु का बलिदान": Jatayu attacki
 
 Episode 17 (1:04) is "शबरी के बेर": a flashback to young Shabari serving Matang Rishi and his promise that Ram would come, years of sweeping the path and laying flowers until her hair turns white, Ram's arrival and her tears, the berries she tastes before giving only the sweet ones to Ram (from the popular tradition), Ram's "bond of devotion", the way to Sugriva, and a Hanuman teaser. Run the same commands from inside `ramayan-hindi\ep17\`; the output is `output/ramayan-hindi-ep17-shabari.mp4`.
 
+Episode 18 (0:59) is "हनुमान से भेंट": the brahmin who is really Hanuman, Sugriva hiding on Rishyamuk and fearing the two archers, Hanuman sent in disguise (his tail peeks out), "I am Ram", the true form and Hanuman at Ram's feet, the embrace, Hanuman carrying Ram and Lakshman on his shoulders up to Sugriva, and a Ram-Sugriva friendship teaser. Hanuman, Sugriva and other vanaras come from `CAST.hanuman`, `CAST.sugriva` and `CAST.vanara` in `lib.mjs`. Output: `output/ramayan-hindi-ep18-hanuman-milan.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)

@@ -52,7 +52,7 @@ function tiara() {
 }
 
 function face(o) {
-  const { id, skin, hair, hat, beard, female, tilak, mood, brows, longHair, fangs } = o;
+  const { id, skin, hair, hat, beard, female, tilak, mood, brows, longHair, fangs, muzzle } = o;
   const back = [];
   if (female) back.push(`<ellipse cx="0" cy="-92" rx="24" ry="17" ${st(hair)}/><circle cx="-18" cy="-98" r="5" fill="${C.white}"/><circle cx="-8" cy="-104" r="5" fill="${C.white}"/><circle cx="4" cy="-106" r="5" fill="${C.white}"/>`);
   if (hat === "sage") back.push(`<ellipse cx="0" cy="-104" rx="23" ry="25" ${st(hair)}/><path d="M-18 -96 Q0 -88 18 -96" stroke="${C.ink}" stroke-width="2.5" fill="none"/><path d="M-12 -116 Q0 -108 12 -116" stroke="${C.ink}" stroke-width="2" fill="none"/>`);
@@ -98,7 +98,7 @@ function face(o) {
       <g id="${id}-i" transform="${T()}"><circle cx="-14" cy="0" r="4.6" fill="${iris}"/><circle cx="14" cy="0" r="4.6" fill="${iris}"/></g>
     </g></g>
     ${browPath}
-    <path d="M1 -50 Q-4 -37 3 -35" stroke="${C.ink}" stroke-width="2" fill="none" stroke-linecap="round"/>
+    ${muzzle ? `<ellipse cx="0" cy="-27" rx="23" ry="17" fill="${muzzle}" stroke="${C.ink}" stroke-width="2.5"/><ellipse cx="-4" cy="-38" rx="2.5" ry="2" fill="${C.ink}"/><ellipse cx="4" cy="-38" rx="2.5" ry="2" fill="${C.ink}"/>` : `<path d="M1 -50 Q-4 -37 3 -35" stroke="${C.ink}" stroke-width="2" fill="none" stroke-linecap="round"/>`}
     <path id="${id}-m1" d="M-10 -23 Q0 -15 10 -23" stroke="${C.ink}" stroke-width="3" fill="none" stroke-linecap="round" style="opacity:${mood === "sad" ? 0 : 1}"/>
     <path id="${id}-m2" d="M-10 -17 Q0 -25 10 -17" stroke="${C.ink}" stroke-width="3" fill="none" stroke-linecap="round" style="opacity:${mood === "sad" ? 1 : 0}"/>
     ${mouthOpen}${fangSvg}
@@ -154,6 +154,7 @@ export function person(o) {
     hat = "none", hair = "#1b1209", beard = null, female = false, seated = false, back = null,
     aL = 8, aR = -8, propL = "", propR = "", tilak = false, mood = "smile", hs = 1, brows = "calm",
     longHair = false, glow = null, hidden = false, fangs = false, claws = false, robe = null,
+    muzzle = null, tail = null,
   } = o;
   const L = seated ? 80 : 0;
 
@@ -196,7 +197,7 @@ export function person(o) {
 
   const head = `<g transform="translate(0,${-262 + L}) scale(${hs})"><g id="${id}-h" transform="rotate(0)">
       <rect x="-12" y="-16" width="24" height="24" ${st(skin, 2.5)}/>
-      ${face({ id, skin, hair, hat, beard, female, tilak, mood, brows, longHair, fangs })}
+      ${face({ id, skin, hair, hat, beard, female, tilak, mood, brows, longHair, fangs, muzzle })}
     </g></g>`;
 
   const aura = glow ? `<circle cx="0" cy="${-310 + L}" r="160" fill="url(#${glow})"/>` : "";
@@ -204,8 +205,12 @@ export function person(o) {
   const backHair = longHair || female
     ? `<g transform="translate(0,${-262 + L}) scale(${hs})"><path d="M-36 -66 Q-50 -30 -54 18 Q-46 34 -30 26 L-20 -10 L20 -10 L30 26 Q46 34 54 18 Q50 -30 36 -66 Z" fill="${hair}" stroke="${C.ink}" stroke-width="3"/></g>`
     : "";
+  // a vanara's tail curls up behind the right hip
+  const tailSvg = tail
+    ? `<g transform="translate(24,${-120 + L})"><g id="${id}-tl" transform="rotate(0)"><path d="M0 0 Q110 10 112 -120 Q112 -200 64 -214" fill="none" stroke="${C.ink}" stroke-width="20" stroke-linecap="round"/><path d="M0 0 Q110 10 112 -120 Q112 -200 64 -214" fill="none" stroke="${tail}" stroke-width="13" stroke-linecap="round"/></g></g>`
+    : "";
   return `<g id="${id}" transform="${T(x, y, 0, s)}"${hidden ? ` style="opacity:0"` : ""}><g id="${id}-b" transform="${T()}">
-    ${aura}${backGear(back, L, id)}${backHair}${feet}${lowerSvg}${torso}${belt}${necklace}
+    ${aura}${tailSvg}${backGear(back, L, id)}${backHair}${feet}${lowerSvg}${torso}${belt}${necklace}
     ${arm(`${id}-al`, -1, aL, skin, sleeve, propL, L, claws)}
     ${arm(`${id}-ar`, 1, aR, skin, sleeve, propR, L, claws)}
     ${head}
@@ -222,6 +227,10 @@ export const CAST = {
   vishwamitra: (id, x, y, s, extra = {}) => person({ id, x, y, s, skin: SKIN.tan, lower: "#b4471c", robe: "#b4471c", border: C.goldL, hat: "sage", beard: "sage", hair: "#4a4a4a", brows: "fierce", tilak: true, ...extra }),
   queen: (id, x, y, s, saree, extra = {}) => person({ id, x, y, s, skin: SKIN.fair, female: true, lower: saree, upper: C.maroon, hat: "queen", ...extra }),
   divine: (id, x, y, s, extra = {}) => person({ id, x, y, s, skin: SKIN.divine, lower: "#fff2c4", sash: C.verm, hat: "divine", longHair: true, hair: "#2a1a0a", ...extra }),
+  // vanaras: a monkey muzzle and a tail on the chibi body
+  hanuman: (id, x, y, s, extra = {}) => person({ id, x, y, s, skin: "#d9702a", lower: C.verm, sash: C.gold, hat: "prince", hair: "#7a3a1a", tilak: true, muzzle: "#f3c58a", tail: "#d9702a", ...extra }),
+  sugriva: (id, x, y, s, extra = {}) => person({ id, x, y, s, skin: "#b07a3a", lower: "#2f5a8a", sash: C.gold, hat: "royal", hair: "#5a3a1a", muzzle: "#e9c08a", tail: "#b07a3a", ...extra }),
+  vanara: (id, x, y, s, extra = {}) => person({ id, x, y, s, skin: "#a8743a", lower: "#6a4a2a", sash: null, hair: "#5a3a1a", muzzle: "#e0b680", tail: "#a8743a", ...extra }),
   tadaka: (id, x, y, s, extra = {}) => person({ id, x, y, s, skin: SKIN.demon, lower: "#2f5a2a", border: "#8a1b1b", sash: null, hat: "wild", hair: "#1a0f1c", brows: "fierce", fangs: true, claws: true, mood: "sad", ...extra }),
 };
 

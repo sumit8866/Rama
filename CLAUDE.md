@@ -27,7 +27,7 @@ Do the whole pipeline in one go, without stopping to ask questions, and end by g
 
 ## Episodes
 
-Done: Ep 14 सोने का हिरण, Ep 15 सीता हरण, Ep 16 जटायु का बलिदान, Ep 17 शबरी के बेर (Ep 1-13 project folders were deleted; their videos are backed up outside the repo). Next: Ep 18 हनुमान से भेंट (Ep 17 ends with that teaser), then सुग्रीव मित्रता, बाली वध, सीता की खोज, ...
+Done: Ep 14 सोने का हिरण, Ep 15 सीता हरण, Ep 16 जटायु का बलिदान, Ep 17 शबरी के बेर, Ep 18 हनुमान से भेंट (Ep 1-13 project folders were deleted; their videos are backed up outside the repo). Next: Ep 19 राम-सुग्रीव मित्रता (Ep 18 ends with that teaser), then बाली वध, सीता की खोज, ...
 
 Each episode is `ramayan-hindi\epNN\` with:
 - `build\narration.json`: Hindi lines per scene (`*word*` = yellow highlight), title chip per scene, engine/voice settings. Copy the settings block from ep16.
