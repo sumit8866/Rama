@@ -121,6 +121,8 @@ Episode 27 (0:59) is "बाली वध" (Valmiki, Kishkindha Kanda sarga 16-1
 
 Episode 28 (1:06) is "बाली के प्रश्न, राम के उत्तर" (Valmiki, Kishkindha Kanda sarga 17-18, checked against the Shastri translation on wisdomlib): the wounded Vali asking why Ram struck from hiding and what harm he had done, his claim that he would have brought Sita in a day and Ravana in chains, Ram's answer (the earth belongs to the Ikshvakus under Bharat's rule, Vali took Ruma while Sugriva lived, kings may strike wild creatures from cover), and Vali accepting, asking forgiveness, and asking Ram to protect Angada and see Tara respected. Output: `output/ramayan-hindi-ep28-bali-ke-prashn.mp4`.
 
+Episode 29 (1:12) is "तारा का विलाप" (Valmiki, Kishkindha Kanda sarga 19-22, checked against the Shastri translation on wisdomlib): dying Vali entrusting Angada to Sugriva, Tara running out with Angada and refusing to turn back, Ram leaning on his bow, Tara's lament, Hanuman advising Angada's crowning and Tara answering that the kingdom is now Sugriva's, Vali's last words (it was destiny; be Angada's father; follow Tara's counsel), Indra's gold chain passed to Sugriva, Vali telling Angada to obey Sugriva, and Vali's death. Output: `output/ramayan-hindi-ep29-tara-ka-vilap.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
