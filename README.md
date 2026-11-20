@@ -107,6 +107,8 @@ Episode 20 (0:57) is "सीता जी के गहने" (Valmiki, Kishkin
 
 Episode 21 (1:11) is "बाली और मायावी" (Valmiki, Kishkindha Kanda sarga 9-10): the sealed cave as a hook, Vali and Sugriva as loving brothers with Vali king of Kishkindha, the demon Mayavi's challenge at night, the chase into the cave, Sugriva guarding the mouth for a whole year, blood flowing out, the cave sealed with a rock, the ministers crowning Sugriva, Vali's return and rage, Sugriva thrown out and Ruma taken. Output: `output/ramayan-hindi-ep21-bali-mayavi.mp4`.
 
+Episode 22 (1:14) is "दुंदुभि और मतंग का श्राप" (Valmiki, Kishkindha Kanda sarga 11): the toe-flick hook, the buffalo demon Dundubhi with the strength of a thousand elephants, the ocean and the Himalaya each sending him on to Vali, Vali seizing his horns, slamming him down and hurling the body a yojana, the blood falling on Matanga's ashram and the curse that keeps Vali off Rishyamuka, Sugriva safe there, the giant skeleton, Ram flicking it ten yojanas with his big toe, and Sugriva's doubt that dry bones prove little. Output: `output/ramayan-hindi-ep22-dundubhi-matang.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
