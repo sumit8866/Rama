@@ -119,6 +119,8 @@ Episode 26 (1:07) is "तारा की चेतावनी" (Valmiki, Kishk
 
 Episode 27 (0:59) is "बाली वध" (Valmiki, Kishkindha Kanda sarga 16-17): Vali charging Sugriva in his garland, Sugriva striking with an uprooted sal tree, Sugriva tiring and looking to Ram, Ram's thunderbolt-like arrow striking Vali's chest (a flash, no blood), Vali falling like a cut tree, Indra's golden chain still holding his life, and Ram and Lakshman stepping out. Output: `output/ramayan-hindi-ep27-bali-vadh.mp4`.
 
+Episode 28 (1:06) is "बाली के प्रश्न, राम के उत्तर" (Valmiki, Kishkindha Kanda sarga 17-18, checked against the Shastri translation on wisdomlib): the wounded Vali asking why Ram struck from hiding and what harm he had done, his claim that he would have brought Sita in a day and Ravana in chains, Ram's answer (the earth belongs to the Ikshvakus under Bharat's rule, Vali took Ruma while Sugriva lived, kings may strike wild creatures from cover), and Vali accepting, asking forgiveness, and asking Ram to protect Angada and see Tara respected. Output: `output/ramayan-hindi-ep28-bali-ke-prashn.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)

@@ -27,7 +27,7 @@ Do the whole pipeline in one go, without stopping to ask questions, and end by g
 
 ## Episodes
 
-Done: Ep 14 सोने का हिरण, Ep 15 सीता हरण, Ep 16 जटायु का बलिदान, Ep 17 शबरी के बेर, Ep 18 हनुमान से भेंट, Ep 19 राम-सुग्रीव मित्रता, Ep 20 सीता जी के गहने, Ep 21 बाली और मायावी, Ep 22 दुंदुभि और मतंग का श्राप, Ep 23 सात साल के पेड़, Ep 24 बाली-सुग्रीव का पहला युद्ध, Ep 25 फूलों की माला, Ep 26 तारा की चेतावनी, Ep 27 बाली वध (Ep 1-13 project folders were deleted; their videos are backed up outside the repo). Next: Ep 28 बाली के प्रश्न, राम के उत्तर; the full list is in `ramayan-hindi\EPISODE-PLAN.md`.
+Done: Ep 14 सोने का हिरण, Ep 15 सीता हरण, Ep 16 जटायु का बलिदान, Ep 17 शबरी के बेर, Ep 18 हनुमान से भेंट, Ep 19 राम-सुग्रीव मित्रता, Ep 20 सीता जी के गहने, Ep 21 बाली और मायावी, Ep 22 दुंदुभि और मतंग का श्राप, Ep 23 सात साल के पेड़, Ep 24 बाली-सुग्रीव का पहला युद्ध, Ep 25 फूलों की माला, Ep 26 तारा की चेतावनी, Ep 27 बाली वध, Ep 28 बाली के प्रश्न, राम के उत्तर (Ep 1-13 project folders were deleted; their videos are backed up outside the repo). Next: Ep 29 तारा का विलाप; when valmikiramayan.net is down, the Shastri translation on wisdomlib.org works (Kishkindha ch. 17 = .../d/doc424190.html, ch. 18 = doc424191, so later chapters follow on); the full list is in `ramayan-hindi\EPISODE-PLAN.md`.
 
 Each episode is `ramayan-hindi\epNN\` with:
 - `build\narration.json`: Hindi lines per scene (`*word*` = yellow highlight), title chip per scene, engine/voice settings. Copy the settings block from ep16.
