@@ -31,7 +31,7 @@ Done: Ep 14 सोने का हिरण, Ep 15 सीता हरण, Ep 1
 
 Each episode is `ramayan-hindi\epNN\` with:
 - `build\narration.json`: Hindi lines per scene (`*word*` = yellow highlight), title chip per scene, engine/voice settings. Copy the settings block from ep16.
-- `build\scenes.mjs`: each scene's art and GSAP animation. Imports characters and props from `ramayan\build\lib.mjs` (`CAST.ram`, `CAST.sita`, `PROP`, trees, huts...) and helpers from `ramayan-hindi\reel-kit.mjs` (tag, big, sparkles, petals, flames, archer, shoot, arrowFly...). Animation helpers (mv, osc, op, hx, walk, blink, mood) come from `ramayan\build\rig.js`.
+- `build\scenes.mjs`: each scene's art and GSAP animation. Imports characters and props from `ramayan\build\lib.mjs` (`CAST.ram`, `CAST.sita`, `CAST.hanuman`, `CAST.sugriva`, `CAST.vanara` (any person can take `muzzle` and `tail` colours), `PROP`, trees, huts...) and helpers from `ramayan-hindi\reel-kit.mjs` (tag, big, sparkles, petals, flames, archer, shoot, arrowFly...). Animation helpers (mv, osc, op, hx, walk, blink, mood) come from `ramayan\build\rig.js`.
 - `assets\vo\`: voice lines made by `voice_lines.py` (do not delete: they cost ElevenLabs credits).
 
 Start a new episode by copying the closest one (`Copy-Item -Recurse ramayan-hindi\ep16 ramayan-hindi\ep17`), delete its `assets\vo\*.wav` and `compositions\`, then rewrite `narration.json` and `scenes.mjs`.
