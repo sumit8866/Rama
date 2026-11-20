@@ -125,6 +125,8 @@ Episode 29 (1:12) is "तारा का विलाप" (Valmiki, Kishkindha 
 
 Episode 30 (1:05) is "सुग्रीव का राज्याभिषेक" (Valmiki, Kishkindha Kanda sarga 23-26, checked against the Shastri translation on wisdomlib): Sugriva's remorse and wish to enter the pyre, Tara asking Ram to kill her with the same arrow and Ram consoling her, Vali carried in a palanquin to the riverbank and Angada lighting the pyre, Hanuman inviting Ram into Kishkindha and Ram keeping his father's 14-year command not to enter a town, and Sugriva crowned with Angada as heir. Output: `output/ramayan-hindi-ep30-sugriva-rajyabhishek.mp4`.
 
+Episode 31 (1:03) is "वर्षा ऋतु" (Valmiki, Kishkindha Kanda sarga 27-28, checked against the Shastri translation on wisdomlib): lightning that looks to Ram like Sita struggling in Ravana's grip, the cave on Prasravana with its lotus pool, river and music from Kishkindha, Ram sleepless at moonrise and Lakshman's counsel (one who grieves never succeeds; wait for autumn), the rains (hill-like clouds, dancing peacocks, croaking frogs, rivers racing to the sea), and Ram trusting Sugriva to remember his promise. Output: `output/ramayan-hindi-ep31-varsha-ritu.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
