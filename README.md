@@ -111,6 +111,8 @@ Episode 22 (1:14) is "दुंदुभि और मतंग का श्र
 
 Episode 23 (1:02) is "सात साल के पेड़" (Valmiki, Kishkindha Kanda sarga 11-12): the one-arrow hook, Sugriva showing the seven sal trees, Vali able to pierce only one, Lakshman asking what would convince him, Ram's single arrow piercing all seven trees, the hill and the earth, the arrow returning to his quiver, and Sugriva bowing at Ram's feet. Output: `output/ramayan-hindi-ep23-saat-saal-vriksh.mp4`.
 
+Episode 24 (1:00) is "बाली-सुग्रीव का पहला युद्ध" (Valmiki, Kishkindha Kanda sarga 12): the held-arrow hook, Ram hiding behind trees at Kishkindha, Sugriva's roaring challenge, Vali bursting out, the fight (a cartoon dust cloud), the two brothers looking exactly alike so Ram does not shoot, Sugriva beaten and fleeing to Rishyamuka, and his complaint to Ram. Output: `output/ramayan-hindi-ep24-pehla-yuddh.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
