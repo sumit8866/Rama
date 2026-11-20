@@ -28,7 +28,7 @@ TRACKS = {
     "sad": "music/sad-classical-instrumental.mp3",
 }
 MOOD = {
-    "ep14": "action", "ep15": "action", "ep16": "sad", "ep17": "calm", "ep18": "calm", "ep19": "calm", "ep20": "sad", "ep21": "action", "ep22": "action", "ep23": "action", "ep24": "action", "ep25": "calm", "ep26": "sad",
+    "ep14": "action", "ep15": "action", "ep16": "sad", "ep17": "calm", "ep18": "calm", "ep19": "calm", "ep20": "sad", "ep21": "action", "ep22": "action", "ep23": "action", "ep24": "action", "ep25": "calm", "ep26": "sad", "ep27": "sad",
 }
 MUSIC_DB = -26.0  # average music level before ducking; under speech it ends up ~16 dB below the voice
 

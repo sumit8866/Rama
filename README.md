@@ -117,6 +117,8 @@ Episode 25 (1:01) is "फूलों की माला" (Valmiki, Kishkindha 
 
 Episode 26 (1:07) is "तारा की चेतावनी" (Valmiki, Kishkindha Kanda sarga 15-16): Vali rising in rage at Sugriva's second roar, Tara stopping him (a beaten Sugriva back so soon must have strong help), Angada's spies' news that Ram and Lakshman are Sugriva's friends, her plea to make Sugriva crown prince, Vali's refusal (a hero cannot ignore a challenge, Ram knows dharma, he will only break Sugriva's pride), Tara's blessing walk around him, and Vali going out to fight. Output: `output/ramayan-hindi-ep26-tara-ki-chetavani.mp4`.
 
+Episode 27 (0:59) is "बाली वध" (Valmiki, Kishkindha Kanda sarga 16-17): Vali charging Sugriva in his garland, Sugriva striking with an uprooted sal tree, Sugriva tiring and looking to Ram, Ram's thunderbolt-like arrow striking Vali's chest (a flash, no blood), Vali falling like a cut tree, Indra's golden chain still holding his life, and Ram and Lakshman stepping out. Output: `output/ramayan-hindi-ep27-bali-vadh.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
