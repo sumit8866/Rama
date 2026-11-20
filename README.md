@@ -123,6 +123,8 @@ Episode 28 (1:06) is "बाली के प्रश्न, राम के �
 
 Episode 29 (1:12) is "तारा का विलाप" (Valmiki, Kishkindha Kanda sarga 19-22, checked against the Shastri translation on wisdomlib): dying Vali entrusting Angada to Sugriva, Tara running out with Angada and refusing to turn back, Ram leaning on his bow, Tara's lament, Hanuman advising Angada's crowning and Tara answering that the kingdom is now Sugriva's, Vali's last words (it was destiny; be Angada's father; follow Tara's counsel), Indra's gold chain passed to Sugriva, Vali telling Angada to obey Sugriva, and Vali's death. Output: `output/ramayan-hindi-ep29-tara-ka-vilap.mp4`.
 
+Episode 30 (1:05) is "सुग्रीव का राज्याभिषेक" (Valmiki, Kishkindha Kanda sarga 23-26, checked against the Shastri translation on wisdomlib): Sugriva's remorse and wish to enter the pyre, Tara asking Ram to kill her with the same arrow and Ram consoling her, Vali carried in a palanquin to the riverbank and Angada lighting the pyre, Hanuman inviting Ram into Kishkindha and Ram keeping his father's 14-year command not to enter a town, and Sugriva crowned with Angada as heir. Output: `output/ramayan-hindi-ep30-sugriva-rajyabhishek.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
