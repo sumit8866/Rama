@@ -1,0 +1,41 @@
+<template>
+  <style>
+  @font-face { font-family: "Mukta"; font-weight: 800; src: url("assets/fonts/Mukta-ExtraBold.ttf"); }
+  @font-face { font-family: "Mukta"; font-weight: 700; src: url("assets/fonts/Mukta-Bold.ttf"); }
+  @font-face { font-family: "Tiro Devanagari Hindi"; font-weight: 400; src: url("assets/fonts/TiroDevanagariHindi-Regular.ttf"); }
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .cw { position: absolute; left: 70px; width: 820px; top: 1352px; height: 190px; display: flex; align-items: center; justify-content: center; }
+    .cap { font-family: "Mukta", sans-serif; font-weight: 800; font-size: 54px; line-height: 1.3; color: #ffffff; text-align: center;
+      background: rgba(12, 6, 20, 0.66); border-radius: 26px; padding: 14px 28px 6px; max-width: 820px; text-wrap: balance;
+      text-shadow: 0 3px 0 #000, 0 0 12px rgba(0,0,0,0.6); }
+    .hl { color: #ffd23a; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cw-s01_1" class="cw clip" data-start="0.55" data-duration="6.255"><div id="cap-s01_1" class="cap">सुग्रीव का आदेश... <span class="hl">चारों दिशाओं</span> में जाओ, और सीता जी को खोजो!</div></div>
+    <div id="cw-s02_1" class="cw clip" data-start="7.455" data-duration="7.08"><div id="cap-s02_1" class="cap"><span class="hl">पूर्व</span> में विनत गए... गंगा-यमुना पार, <span class="hl">उदय पर्वत</span> तक, जहाँ सूरज उगता है।</div></div>
+    <div id="cw-s03_1" class="cw clip" data-start="15.185" data-duration="4.7"><div id="cap-s03_1" class="cap"><span class="hl">दक्षिण</span> में युवराज अंगद... साथ में <span class="hl">हनुमान</span>, जाम्बवान और नील!</div></div>
+    <div id="cw-s03_2" class="cw clip" data-start="19.885" data-duration="5.8"><div id="cap-s03_2" class="cap">विंध्य पर्वत, मलय पर्वत... और आगे विशाल <span class="hl">सागर</span>!</div></div>
+    <div id="cw-s04_1" class="cw clip" data-start="26.335" data-duration="7.666"><div id="cap-s04_1" class="cap"><span class="hl">पश्चिम</span> में तारा के पिता सुषेण... दो लाख वानर लेकर, <span class="hl">अस्ताचल</span> तक, जहाँ सूरज डूबता है।</div></div>
+    <div id="cw-s05_1" class="cw clip" data-start="34.651" data-duration="6.529"><div id="cap-s05_1" class="cap"><span class="hl">उत्तर</span> में शतबली... <span class="hl">हिमालय</span> और कैलाश के बर्फ़ीले पहाड़ों तक।</div></div>
+    <div id="cw-s06_1" class="cw clip" data-start="41.83" data-duration="3.02"><div id="cap-s06_1" class="cap">सुग्रीव बोले... <span class="hl">एक महीने</span> में लौटना है!</div></div>
+    <div id="cw-s06_2" class="cw clip" data-start="44.85" data-duration="4.76"><div id="cap-s06_2" class="cap">जो सीता जी का पता लाएगा, उसे बड़ा <span class="hl">इनाम</span> मिलेगा!</div></div>
+    <div id="cw-s07_1" class="cw clip" data-start="50.26" data-duration="2.934"><div id="cap-s07_1" class="cap">अगले भाग में देखिए... राम की <span class="hl">अंगूठी</span>!</div></div>
+    <div id="cw-s07_2" class="cw clip" data-start="53.194" data-duration="3.251"><div id="cap-s07_2" class="cap"><span class="hl">जय श्री राम</span>!</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cap-s01_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 0.55);
+      tl.fromTo("#cap-s02_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 7.455);
+      tl.fromTo("#cap-s03_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 15.185);
+      tl.fromTo("#cap-s03_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 19.885);
+      tl.fromTo("#cap-s04_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 26.335);
+      tl.fromTo("#cap-s05_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 34.651);
+      tl.fromTo("#cap-s06_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 41.83);
+      tl.fromTo("#cap-s06_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 44.85);
+      tl.fromTo("#cap-s07_1", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 50.26);
+      tl.fromTo("#cap-s07_2", { opacity: 0, scale: 0.86, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.22, ease: "back.out(2)" }, 53.194);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

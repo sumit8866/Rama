@@ -133,6 +133,8 @@ Episode 33 (1:04) is "तारा ने लक्ष्मण को शां
 
 Episode 34 (0:58) is "वानर सेना" (Valmiki, Kishkindha Kanda sarga 37-39, checked against the Shastri translation on wisdomlib): the dust-darkened sky as crores of vanaras arrive, Sugriva sending Hanuman to summon them from Himalaya, Vindhya, Kailash and every mountain (black as collyrium, golden, lion-maned), Sugriva and Lakshman reaching Ram in a golden litter and Ram's embrace (the time has come to act), the commanders Jambavan, Nila, Mainda, Dvivida and Hanuman's father Kesari, and Sugriva's pledge that they will fight Ravana and bring Sita back. Output: `output/ramayan-hindi-ep34-vanar-sena.mp4`.
 
+Episode 35 (0:57) is "चारों दिशाओं में खोज" (Valmiki, Kishkindha Kanda sarga 40-43, checked against the Shastri translation on wisdomlib): Sugriva orders the search in all four directions; Vinata goes east across the Ganga and Yamuna to the sunrise mountain Udaya; Angada leads the south party with Hanuman, Jambavan and Nila past the Vindhya and Malaya mountains to the ocean; Sushena, Tara's father, goes west with two lakh vanaras to Astachala where the sun sets; Shatabali goes north to the snowy Himalaya and Kailash; return within one month, and whoever finds Sita gets a great reward (sarga 41). For children the reel leaves out the death penalty for lateness (sarga 40, 42). Output: `output/ramayan-hindi-ep35-chaaron-dishaon-mein-khoj.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
