@@ -113,6 +113,8 @@ Episode 23 (1:02) is "सात साल के पेड़" (Valmiki, Kishkin
 
 Episode 24 (1:00) is "बाली-सुग्रीव का पहला युद्ध" (Valmiki, Kishkindha Kanda sarga 12): the held-arrow hook, Ram hiding behind trees at Kishkindha, Sugriva's roaring challenge, Vali bursting out, the fight (a cartoon dust cloud), the two brothers looking exactly alike so Ram does not shoot, Sugriva beaten and fleeing to Rishyamuka, and his complaint to Ram. Output: `output/ramayan-hindi-ep24-pehla-yuddh.mp4`.
 
+Episode 25 (1:01) is "फूलों की माला" (Valmiki, Kishkindha Kanda sarga 12-14): Ram explaining that the brothers matched in ornaments, size, gait and voice, Lakshman putting the flowering gajapushpi creeper on Sugriva's neck (he shines like an evening cloud with a row of cranes), the Saptajana ashram of seven sages on the way, and Sugriva's second roaring challenge with Ram ready. Output: `output/ramayan-hindi-ep25-phoolon-ki-mala.mp4`.
+
 The shared scene helpers (labels, petals, sparkles, archery, the cropped hall) live in `ramayan-hindi/reel-kit.mjs`, so a new episode's `scenes.mjs` only holds its own art and timing.
 
 ## Background music (`music/`)
